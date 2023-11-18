@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+        }
+        nav{
+            background-color: lightslategray;
+            padding: 3px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.315); /*Deslocamento vertical - deslocamento horizontal - blur(borrado)- spread(espalhamento) - cor */
+        }
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 40px;
+            
+        }
+        nav > a:hover{
+            text-decoration: underline;
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+             margin: 10px;
+             text-align: justify;
+             border-radius: 10px 0px; /* são 4 medidas top left - top right - bot right - bot left. Um valor significa que todos os 4 são iguais */
+             box-shadow: 4px 2px 7px 0px rgba(0, 0, 0, 0.329);
+        }
+        article{
+            background-color: lightgray;
+            padding: 5px;
+        }
+        article > aside{
+            background-color: rgb(112, 110, 110);
+        }
+        footer{
+            background-color: black;
+            color: white;
+            padding: 1px;
+            margin: 0px;
+            text-align: right;
+        }
+        footer > p{
+            margin: 0px;
+        }
+
+        /*Usar uma borda de 50% faz a box ficar redonda*/
+    </style>
+
+</head>
+<body>
+    <header>   <!--cabeçalho-->  <!--todas essas tags são tags de agrupamento (grouping tags) semânticas com sentido e usadas para funções específicas ao contrário da div que é uma tag genérica-->
+               <h1>Meu site</h1>
+               <nav> <!--menu de navegação(menu)-->
+                <a href="#">link</a>
+                <a href="#">link</a>
+                <a href="#">link</a>
+                <a href="#">link</a>
+                <a href="#">link</a>
+               </nav>
+    </header>
+    <main> <!--Conteúdo principal-->
+        <section id="assuntos"> <!--sessão-->
+            <article> <!--artigo-->
+                <aside><!--conteúdo periférico relativo ao artigo-->
+
+                </aside>
+            </article>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Breaking news</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore libero ad iure consectetur aliquam sequi mollitia consequatur odio temporibus reiciendis repellat obcaecati ut provident dicta deleniti rerum, aspernatur voluptate eius.</p>
+                <aside>
+                    escrito por Vitaao da silva sauro
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer> <!--Rodapé-->
+        <p>Desenvolvido por VitaaoHG</p>
+    </footer>
+</body>
+</html>

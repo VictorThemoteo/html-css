@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixas</title>
+    <style>
+        h1{
+            
+            /*
+                Por padrão h1 é uma box block-level mas com o comando display:inline; ele também vira inline, mas ao fazer isso ele perde os atributos height e width
+            */
+            
+            background-color: rgb(168, 163, 163);
+            height: 300px;
+            width: 300px;
+
+            border-width: 10px;
+            border-style: solid;
+            border-color: #a4d391;
+
+            /*
+            a versão simplificada(shorthand) seria border: 10px solid #a4d391 
+
+            mas precisa ser na ordem width -> style -> color
+            */
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+
+            /*
+                mesma coisa o shorthand aqui padding: 10px; só funciona colocar um valor se todos os valores forem iguais (top = right = bootom = left) separado seria 10px 10px 10px 10px; Se eu colocar 10px 20px; em cima e em baixo ficaria com o valor 10 e esquerda e direita com o valor 20 
+            */
+
+            margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 40px;
+            margin-left: 20px;
+
+            /*
+                No caso da margin também pode ser utilizado como o padding mas para centralizar no meio da tela os valores right e left devem ser inseridos como auto. Ex: 20px auto 40px auto;
+            */
+
+            outline-width: 5px;
+            outline-style: dashed; 
+            outline-color: gold;     
+            
+            /*
+                outline não é muito utilizado mas funciona como o border na ordem width -> style -> color
+                EX: outline: 5px dashed gold;
+            */
+        }
+
+        a{
+
+            /*
+                por padrão a é uma box-inline mas com o comando display:block; ela também pode ser alterada pra uma box-block ganhando os atributos height e width 
+            */
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-leve</h1>
+    <p>Parágrafos são exemplos de box-level mas os <a href="#">links são exemplos de caixas inline-level.</a>Vamos ver como tudo isso funciona</p>
+</body>
+</html>
