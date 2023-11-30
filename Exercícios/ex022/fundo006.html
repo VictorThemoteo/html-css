@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundo fixo de tela</title>
+    <style>
+        body{
+            /*No conteúdo Guanabara usa vh= view port height(altura da tela mas isso pode gerar inconsistências na visualização mobile então é melhor usar dvh= dynamic view port height) altura dinamica da tela. Se usar svh(small view port height) então na hora do site pode manter os dois valores EX: height: 100vh
+                        height: 100svh e ai vai funcionar bem tanto em telas grandes quanto pequenas*/
+            height: 100dvh;
+            /*Mesmo com uma imagem de fundo é bom colocar um background color caso o servidor esteja lento ou internet do usuário ruim para adiantar o consumo do conteúdo do site enquanto aimagem não carrega*/
+            /*background-color: black;
+            background-image: url('imagens/wallpaper002.jpg');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;*/
+            
+            /*
+            Shorthand - background= color -> image -> position -> repeat -> [size] -> attachment. O parâmetro size ta assim [] pq não funciona na prática
+            */
+            background:black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+            background-size: cover;
+        }
+        main{
+            background-color: white;
+            max-width: 400px;
+            padding: 10px;
+            margin: auto;
+            border: 1px solid blue;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>teste de imagem de fundo</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi minus incidunt sapiente veritatis voluptatum! Et error, molestias accusantium, animi unde distinctio saepe amet vitae deleniti recusandae ullam quasi doloribus? Rerum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum eveniet doloribus rem consectetur veniam debitis repellendus quod. Aut, provident enim iure id sunt eligendi modi assumenda eum officia, veritatis rerum? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, aliquid maxime, consequuntur facilis itaque, amet iste cumque veritatis dignissimos accusamus animi alias incidunt iure laudantium quisquam eveniet sit tenetur velit.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi minus incidunt sapiente veritatis voluptatum! Et error, molestias accusantium, animi unde distinctio saepe amet vitae deleniti recusandae ullam quasi doloribus? Rerum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum eveniet doloribus rem consectetur veniam debitis repellendus quod. Aut, provident enim iure id sunt eligendi modi assumenda eum officia, veritatis rerum? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, aliquid maxime, consequuntur facilis itaque, amet iste cumque veritatis dignissimos accusamus animi alias incidunt iure laudantium quisquam eveniet sit tenetur velit.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi minus incidunt sapiente veritatis voluptatum! Et error, molestias accusantium, animi unde distinctio saepe amet vitae deleniti recusandae ullam quasi doloribus? Rerum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum eveniet doloribus rem consectetur veniam debitis repellendus quod. Aut, provident enim iure id sunt eligendi modi assumenda eum officia, veritatis rerum? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, aliquid maxime, consequuntur facilis itaque, amet iste cumque veritatis dignissimos accusamus animi alias incidunt iure laudantium quisquam eveniet sit tenetur velit.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi minus incidunt sapiente veritatis voluptatum! Et error, molestias accusantium, animi unde distinctio saepe amet vitae deleniti recusandae ullam quasi doloribus? Rerum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum eveniet doloribus rem consectetur veniam debitis repellendus quod. Aut, provident enim iure id sunt eligendi modi assumenda eum officia, veritatis rerum? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, aliquid maxime, consequuntur facilis itaque, amet iste cumque veritatis dignissimos accusamus animi alias incidunt iure laudantium quisquam eveniet sit tenetur velit.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi minus incidunt sapiente veritatis voluptatum! Et error, molestias accusantium, animi unde distinctio saepe amet vitae deleniti recusandae ullam quasi doloribus? Rerum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum eveniet doloribus rem consectetur veniam debitis repellendus quod. Aut, provident enim iure id sunt eligendi modi assumenda eum officia, veritatis rerum? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, aliquid maxime, consequuntur facilis itaque, amet iste cumque veritatis dignissimos accusamus animi alias incidunt iure laudantium quisquam eveniet sit tenetur velit.</p>
+    </main>
+</body>
+</html>
