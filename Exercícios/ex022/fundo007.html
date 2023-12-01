@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+    <style>
+        #container{
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+            position: relative; /*todo posicionamento de box é relative por padrão, mas para configurar o conteúdo que está dentro com position absolute eu coloco aqui o relative*/
+            height: 97vh;
+            padding: 10px;
+            background-color: purple;
+        }
+        #conteudo{
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+            position: absolute;
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+            
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%); /*aqui eu altero os valores e o conteúdo vai se mover dentro do container e eu ajusto de acordo com a necessidade*/
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>
