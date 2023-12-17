@@ -14,6 +14,13 @@
             border-collapse: collapse;
         }
 
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
         thead, tfoot{
             background-color: gray;
             color: white;
@@ -33,21 +40,28 @@
     <h1>Uso de tabelas grandes</h1>
 
     <!--ANATOMIA PARA TABELAS GRANDES
+
+        CAPTION
+            legenda da tabela, informação que aparece acima, não é usado tr ou td
+
         THEAD
             posso ter na cabeça da table: TD, TR E TH
         TBODY   
             no corpo: TD, TR E TH   
         TFOOT
             e no rodapé: TD TR E TH
+
+            o SCOPE é algo para ajudar o sistema de buscas, o col é coluna então sabe-se que as informações relevantes estão abaixo de "estado" e "população" como em row que a informação está na mesma linha como o total dehabitantes
     -->
 
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>
+                <th scope="col">
                     Estado
                 </th>
-                <th>
+                <th scope="col" style="width: 50px;"> <!--A tabela total está com 500px mas como a coluna população está com 50px o outro lado está com os 450px que faltam e não divididos ao meio como se eu não tivesse o style inline-->
                     População
                 </th>
             </tr>
@@ -85,7 +99,7 @@
 
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
+                <th scope="row">Total de habitantes</th>
                 <td><strong>00000</strong></td>
             </tr>
         </tfoot>
