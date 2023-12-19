@@ -9,9 +9,18 @@
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }
 
+        tbody > tr:nth-child(2n){/*Esse 2n significa de 2 em dois se fosse 3 seria de 3 em 3 linhas. Posso colocar odd(ímpar) as linhas impares vão ficar com esse background color ou (even) que seriam as linhas*/
+            background-color: lightgray;
+        }
+
+        /*tbody > tr:nth-child(odd) posso colocar no lugar de odd 2n-1
+          tbody > tr:nth-child(even) (posso usar o 2n) quando meu fundo não for branco e eu quiser usar um zebrado branco ou qualquer outra cor nas linhas eu tenho que especificar as cores nas pares e ímpares 
+        */
+
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         caption{
@@ -19,6 +28,12 @@
             font-weight: bold;
             padding: 10px;
             background-color: lightgray;
+        }
+
+        thead > tr >th{ /*Essa configuração faz com que a parte de cima da tabela, o cabeçalho se mova conforme vou rolando a tabela e a cidade e população vai descendo*/
+            position: sticky;
+            top: -1px;
+            background-color: gray;
         }
 
         thead, tfoot{
