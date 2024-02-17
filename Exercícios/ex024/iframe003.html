@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+    <style>
+        body{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        iframe{
+            width: 98vw;
+            height: 350px;
+            border: 2px solid black;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat doloribus totam assumenda quo corporis ut nemo fuga commodi architecto? Ratione corrupti perferendis, qui rem sapiente incidunt fuga debitis ea veniam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laborum sint placeat voluptates a neque eaque quam odit dignissimos nobis quae qui aspernatur repellendus atque illo, est quidem ullam similique. Lorem ipsum dolor sit amet consectetur adipisicing elit. In hic soluta dolores dolor praesentium impedit modi laborum sit? Dignissimos maiores omnis, nemo illo enim ipsam exercitationem sit rem facilis id.</p>
+
+    <!--Precisa ter o NAME no iframe para ter o caminho correto-->
+    <ul>
+        <li><a href="paginas-extras/pagina001.html" target="frame">Primeira página</a></li>
+        <li><a href="paginas-extras/pag002.html" target="frame">Segunda página</a></li>
+        <li><a href="paginas-extras/pag003.html" target="frame">Terceira página</a></li>
+    </ul>
+
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil sint quis commodi saepe quam placeat numquam laboriosam est modi earum, cum debitis voluptatum optio nesciunt, facilis ex architecto itaque ratione. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quasi nemo possimus odio officia consequatur iusto, nobis veniam quas neque perspiciatis corrupti dignissimos eos ad id porro? Modi, reprehenderit exercitationem! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint delectus ducimus harum veniam deserunt inventore magnam porro distinctio voluptatum, officia deleniti suscipit odit iure tenetur pariatur mollitia sit id. Veniam?</p>
+
+    <iframe name="frame" srcdoc="<p>Escolha uma das opções acima</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam nulla quas facilis minima qui accusantium recusandae numquam quaerat asperiores perspiciatis nihil eveniet non ducimus maiores distinctio, officia ipsa, deserunt rerum?</P><img src='imagens/padrao003.png'</img> ">
+        <p>Infelizmente seu navegador não é compatível com ifremes</p>
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum totam amet dolore esse voluptates doloribus nulla corrupti, nesciunt dolorem tempore odio quibusdam labore iusto necessitatibus a incidunt neque et laboriosam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium maiores quo, doloribus praesentium delectus fugit error? Magni nulla magnam soluta impedit, debitis corrupti quae, culpa nam, fugit fugiat dignissimos inventore.</p>
+</body>
+</html>
