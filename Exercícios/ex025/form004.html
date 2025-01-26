@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 4</title>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+
+           <form action="cadastro.php" method="get" autocomplete="on">
+            
+            <fieldset>
+                <legend>Dados pessoais</legend>
+                <div>
+                    <label for="iname">Nome</label>
+                    <input type="text" name="nome" id="iname" required>
+                </div>
+                <div>
+                    <label for="iemail">Email</label>
+                    <input type="email" name="email" id="iemail" autocomplete="email" required>
+                </div>
+                <div>
+                    <label for="itel">Telefone</label>
+                    <input type="tel" name="tel" id="itel" autocomplete="tel" pattern="^(\d[2]\)\d{4,5}-{4}\d$" required> <!--Estudar sobre RegEX(Expressões regluares) os números no pattern são descritos assim "dígitos são entendidos por \d ou [0-9]"-->
+                </div>
+                <div>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </div>
+            </fieldset>
+
+           </form>
+   
+</body>
+</html>
